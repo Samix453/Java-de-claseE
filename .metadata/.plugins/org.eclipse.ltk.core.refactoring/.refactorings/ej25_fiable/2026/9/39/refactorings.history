@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ej25.main25&apos; to &apos;main25_fiable&apos;&#x0A;- Original project: &apos;ej25&apos;&#x0A;- Original element: &apos;ej25.main25&apos;&#x0A;- Renamed element: &apos;ej25.main25_fiable&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;main25&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ej25{main25.java[main25" matchStrategy="1" name="main25_fiable" qualified="false" references="true" similarDeclarations="false" stamp="1790151208601" textual="false" version="1.0"/>
+</session>

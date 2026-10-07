@@ -1,0 +1,21 @@
+import java.util.Scanner;
+        Scanner teclado = new Scanner(System.in);
+        
+        int edad = teclado.nextInt();
+        int variable; //Variable
+        double dinero = 3.2 ; //Decimales
+        char grupo = 'A'; //Caracter unico
+        String modulo = "Programación"; //Texto
+        boolean estado; //Dos estados logicos
+        final int MAXIMO_INTENTOS = 3; //Constante
+        // para que solo salgan 2 decimales +String.format("%.2f",dato)+
+        
+        //== igual a
+        // != distinto de
+        // < menor que
+        // <= menor o igual que
+        // > mayor que
+        // >= mayor o igual que
+        // && Y lógico
+        // || O lógico
+        // ! negación

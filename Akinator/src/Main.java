@@ -1,0 +1,125 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//teclado
+		Scanner teclado = new Scanner(System.in);
+		//variable
+		int res;
+		
+		System.out.println("===ligmanator===");
+		System.out.println("Es una chica?");
+		System.out.println("1. Si");
+		System.out.println("2. No");
+		System.out.println("");
+		
+		res = teclado.nextInt();
+		
+		if (res == 1) {
+			System.out.println("Es mayor?");
+			System.out.println("1. Si");
+			System.out.println("2. No");
+			res = teclado.nextInt();
+			if (res == 1 ) {
+			System.out.println("es bety");
+			} else {
+				System.out.println("Nataly");
+			}	
+		} else {
+			System.out.println("Lleva gafs");
+			System.out.println("1. Si");
+			System.out.println("2. No");
+			res = teclado.nextInt();
+			if (res ==1) {
+				System.out.println("Es la goat?");
+				System.out.println("1. Si");
+				System.out.println("2. No");
+				res = teclado.nextInt();
+				if (res == 1) {
+					System.out.println("Tiene nombre de disco almacenamiento de datos?");
+					System.out.println("1. Si");
+					System.out.println("2. No");
+					res = teclado.nextInt();
+					if (res == 1) {
+						System.out.println("ESE ES DVD");
+					} else {
+						System.out.println("Es el papiii");
+					}
+				} else {
+					System.out.println("jeje, no hay nadie que NO sea la GOAT.");
+				}
+			} else {
+				System.out.println("Se sienta delante del todo?");
+				System.out.println("1. Si");
+				System.out.println("2. No");
+				res = teclado.nextInt();
+				if (res == 1) {
+					System.out.println("Es Hugo 100%");
+				} else {
+					System.out.println("viene de SMR?");
+					System.out.println("1. Si");
+					System.out.println("2. No");
+					res = teclado.nextInt();
+					if (res == 1) {
+						System.out.println("Dibuja bien?");
+						System.out.println("1. Si");
+						System.out.println("2. No");
+						res = teclado.nextInt();
+						if (res == 1) {
+							System.out.println("Conduce moto");
+							System.out.println("1. Si");
+							System.out.println("2. No");
+							res = teclado.nextInt();
+							if (res == 1) {
+								System.out.println("ESE SOY YO WOW");
+							} else {
+								System.out.println("MIGUEL MIGUEL MI  GUEL MIIIIGUEL");
+							}
+						} else {
+							System.out.println("Viene en bus?");
+							System.out.println("1. Si");
+							System.out.println("2. No");
+							res = teclado.nextInt();
+							if (res == 1) {
+								System.out.println("Conduce moto");
+								System.out.println("1. Si");
+								System.out.println("2. No");
+								res = teclado.nextInt();
+								if (res == 1) {
+									System.out.println("Es el luisinhio");
+								} else {
+									System.out.println("Es Tinkyyy (Adrián)");
+								}
+							} else {
+								System.out.println("llega tarde?");
+								System.out.println("1. Si");
+								System.out.println("2. No");
+								res = teclado.nextInt();
+								if (res == 1) {
+									System.out.println("Es el iiiiiiiiiikeeer");
+								} else {
+									System.out.println("ayy javiii");
+								}
+							}
+							
+						}
+					} else {
+						System.out.println("Viene pronto a clase?");
+						System.out.println("1. Si");
+						System.out.println("2. No");
+						res = teclado.nextInt();
+						if (res == 1){
+							System.out.println("Ese es el sigma de Adam");
+						} else {
+							System.out.println("Ese es Ruben!");
+						}
+					}
+				}
+			}
+		}
+		
+	}
+
+}

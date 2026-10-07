@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class ControlEntrega {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//llamar al Scanner
+		Scanner teclado = new Scanner(System.in);
+		
+		//declarar constantes
+		
+		//declarar variables
+		int codigo; //codigo de entrega
+		int unirec; //unidades recibidas
+		int unidev; //unidades devueltas
+		
+		//Leer y almacenar los datos
+		System.out.println("introduce los datos requeridos: ");
+		System.out.print("Codigo de entrega: ");
+		codigo = teclado.nextInt();
+		System.out.print("Unidades recibidas: ");
+		unirec = teclado.nextInt();
+		System.out.print("Unidades devueltas: ");
+		unidev = teclado.nextInt();
+		
+		//calcular unidades disponibles
+		System.out.println("Unidades disponibles: " + (unirec - unidev));
+		
+	}
+
+}

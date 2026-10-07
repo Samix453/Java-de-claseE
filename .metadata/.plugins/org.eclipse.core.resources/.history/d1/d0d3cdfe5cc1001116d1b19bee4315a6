@@ -1,0 +1,94 @@
+import java.util.Scanner;
+
+public class MAIN {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner teclado = new Scanner(System.in);
+		
+		//declarar constantes
+		
+		//declarar variables insertadas
+		String name;
+		String code;
+		int prog;
+		int log;
+		int teamWork;
+		int months;
+		boolean rules;
+		boolean auth = false;
+		boolean penalty;
+		int itinerary;
+		
+		//variables
+		double index;
+		int trueFalse;
+		int yearsOld;
+		
+		//pedir los datos
+		System.out.println("Inserte el nombre: ");
+		name = teclado.next();
+		System.out.println("Inserte el codgio: ");
+		code = teclado.next();
+		System.out.println("Inserte nota programacion: ");
+		prog = teclado.nextInt();
+		System.out.println("Inserte nota lógica: ");
+		log = teclado.nextInt();
+		System.out.println("Inserte nota trabajo en equipo: ");
+		teamWork = teclado.nextInt();
+		System.out.println("Inserte meses haciendo programación: ");
+		months = teclado.nextInt();
+		System.out.println("Has aceptado las normas de participacion?: ");
+		System.out.println("1 = si ; 0 = no");
+		trueFalse = teclado.nextInt();
+		if (trueFalse == 1) {
+			rules = true;
+		} else {
+			rules = false;
+		}
+		System.out.println("Años del alumno: ");
+		yearsOld = teclado.nextInt();
+		if (yearsOld < 16) {
+			System.out.println("debes tener al menos 16 años");
+		} else if (yearsOld >= 16 && yearsOld < 18) {
+			System.out.println("debes tener permiso por tus padres. ");
+			System.out.println("tienes el permiso?: ");
+			System.out.println("1 = si ; 0 = no");
+			trueFalse = teclado.nextInt();
+			if (trueFalse == 1) {
+				auth = true;
+			} else {
+				auth = false;
+			}
+		} else {
+			System.out.println("no necesitas autorización");
+		}
+		System.out.println("tienes alguna penalización?: ");
+		System.out.println("1 = si ; 0 = no");
+		trueFalse = teclado.nextInt();
+		if (trueFalse == 1) {
+			penalty = true;
+		} else {
+			penalty = false;
+		}
+		System.out.println("itinerario solicitado: ");
+		System.out.println("1 = Desarrollo web ; 2 = Datos ; 3 = Ciberseguridad ");
+		itinerary = teclado.nextInt();
+		switch (itinerary) {
+		case 1:
+			System.out.println("desarrollo web seleccionado");
+		case 2:
+			System.out.println("datos seleccionado");
+		case 3:
+			System.out.println("Ciberseguridad seleccionado");
+		}
+		
+		//calculo indice
+		System.out.println("Este es el índice de seleccion: ");
+		index = (2 * prog + 2 * log + teamWork) / 5;
+		
+		
+		
+	}
+
+}
