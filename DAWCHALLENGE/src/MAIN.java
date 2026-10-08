@@ -24,6 +24,8 @@ public class MAIN {
 		double index;
 		int trueFalse;
 		int yearsOld;
+		int indexComp;
+		boolean techRequirements = false;
 		
 		//pedir los datos
 		System.out.println("Inserte el nombre: ");
@@ -86,9 +88,43 @@ public class MAIN {
 		//calculo indice
 		index = (2 * prog + 2 * log + teamWork) / 5;
 		System.out.println("Este es el índice de seleccion: " + index);
+		indexComp = (2 * prog + 2 * log + teamWork) / 5;
+		System.out.println("Este es el índice de seleccion redondeado: " + indexComp);
 		
+		//requisito técnico
+		if (prog < 60 && log < 60) {
+			System.out.println("no has cumplido el requisito técnico.");
+			techRequirements = false;
+		} else if (prog >= 60 && log >= 60) {
+			System.out.println("Has cumplido el requisito de admisión");
+			techRequirements = true;
+		} else if (indexComp >= 75 && teamWork >= 85) {
+			System.out.println("Has cumplido el requisito de admisión");
+			techRequirements = true;
+		}
+		//justificar resultado de no admisión
 		
-		
+		if (penalty = true) {
+			System.out.println("RESULTADO NO ADMITIDO:");
+			System.out.println("MOTIVO: Sanción activa");
+		} else if (rules = false) {
+			System.out.println("RESULTADO NO ADMITIDO:");
+			System.out.println("MOTIVO: Normas NO aceptadas");
+		} else if (yearsOld < 18){
+			if (yearsOld < 16 ) {
+				System.out.println("RESULTADO NO ADMITIDO:");
+				System.out.println("MOTIVO: Menor de edad");
+			}
+			if (auth == false) {
+				System.out.println("RESULTADO NO ADMITIDO:");
+				System.out.println("MOTIVO: Menor de edad y autorización no aceptada por padres.");
+				}
+		} else if (techRequirements == false) {
+			System.out.println("RESULTADO NO ADMITIDO:");
+			System.out.println("MOTIVO: nivel técnico no admitido.");
+		} else {
+			System.out.println("RESULTADO ADMITIDO:");
+		}
 	}
 
 }
